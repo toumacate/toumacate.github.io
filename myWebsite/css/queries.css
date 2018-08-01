@@ -1,0 +1,60 @@
+@media screen and (max-width: 767px) {
+	nav {
+		position: relative;
+	}
+	
+	.main-nav {
+		display: none;
+	}
+
+	.btn-nav {
+		display: block;
+		float: right;
+		color: #fff;
+		font-size: 200%;
+		margin-top: 20px;
+		margin-right: 20px;
+	}
+
+	.sign-up h2 {
+		margin-top: 25px;
+	}
+
+	input[type=text],
+	input[type=email] {
+		width: 80%;
+	}
+
+	input[type=submit] {
+	width: 40%;
+}
+}
+
+@media screen and (max-width: 480px) {
+	h1 {
+		font-size: 200%;
+	}
+	
+	.slideshow {
+		width: 90%;
+		margin: 65px 5%;
+	}
+
+	.sign-up {
+		width: 90%;
+		margin: 0 5%;
+	}
+
+	input,
+	select {
+		font-size: 100%;
+	}
+
+	input[type=text],
+	input[type=email] {
+		width: 95%;
+	}
+
+	input[type=submit] {
+	width: 60%;
+}

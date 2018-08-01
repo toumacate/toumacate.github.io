@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Website</title>
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/queries.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+	<script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="#"><ion-icon name="home" class="nav-home"></ion-icon></a>
+			<ul class="main-nav">
+				<li><a href="#">填寫資料</a></li>
+				<li><a href="#">旅遊推薦</a></li>
+				<li><a href="#">消息快報</a></li>
+			</ul>
+			<aside>
+				<div class="aside-nav">
+					<ul>
+						<li><a href="#">消息快報</a></li>
+						<li><a href="#">旅遊推薦</a></li>
+						<li><a href="#">填寫資料</a></li>
+					</ul>
+				</div>
+				<div class="btn-nav">
+					<ion-icon name="apps"></ion-icon>
+				</div>
+			</aside>
+		</nav>
+		<h1>出遊去!馬上來規劃</h1>
+	</header>
+
+	<section class="section-news">
+		<div class="row">
+			<h2>消息快報</h2>
+		</div>
+		<div class="row">
+			<div class="col span-1-of-3 box-news">
+				<ion-icon name="medkit" class="medkit"></ion-icon>
+				<h3>2018超人氣日本藥妝美妝</h3>
+				<p>2018日本必買更新囉！除了原先日本藥妝店裡，超人氣日本面膜、
+				洗面乳、感冒藥、防蚊、防曬<a href="#">... (繼續閱讀 )</a></p>
+			</div>
+			<div class="col span-1-of-3 box-news">
+				<ion-icon name="train" class="train"></ion-icon>
+				<h3>台灣高鐵早鳥優惠來囉</h3>
+				<p>早鳥優惠車票，自乘車日（含）前 28 日起開始限量發售，最晚發售
+				至乘車日（含）前 5 日截止<a href="#">... (繼續閱讀 )</a></p>
+			</div>
+			<div class="col span-1-of-3 box-news">
+				<ion-icon name="book" class="book"></ion-icon>
+				<h3>護照過期更換密技</h3>
+				<p>辦護照過期懶人包更換護照密技 2018自辦護照自助DIY 
+				一看就會 不必跑兩趟 一次搞定!<a href="#">... (繼續閱讀 )</a></p>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-places">
+		<div class="row">
+			<h2>旅遊推薦</h2>
+		</div>
+		<div class="row">
+			<div class="col span-1-of-3 box-places">
+				<div>
+					<a href="#"><img src="img/city.jpg" alt="city"></a>
+					<p>大都會</p>
+				</div>
+			</div>
+			<div class="col span-1-of-3 box-places">
+				<div>
+					<a href="#"><img src="img/mountain.jpg" alt="mountain"></a>
+					<p>山間旅行</p>
+				</div>
+			</div>
+			<div class="col span-1-of-3 box-places">
+				<div>
+					<a href="#"><img src="img/sea.jpg" alt="sea"></a>
+					<p>海邊玩水</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="slideshow">
+				<ul>
+					<li><img src="img/photo1.jpg" alt="photo1"></li>
+					<li><img src="img/photo2.jpg" alt="photo2"></li>
+					<li><img src="img/photo3.jpg" alt="photo3"></li>
+					<li><img src="img/photo4.jpg" alt="photo4"></li>
+					<li><img src="img/photo5.jpg" alt="photo5"></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-form">
+		<div class="row">
+			<div class="sign-up">
+				<h2>填寫資料</h2>
+				<p>優惠訊息寄給您!</p>
+				<form action="#">
+					<input type="text" id="name" placeholder="你的姓名" required>
+					<input type="email" id="email" placeholder="你的信箱" required>
+					<select name="" id="sex">
+						<option value="male" selected>男</option>
+						<option value="female">女</option>
+					</select>
+					<input type="submit" id="submit">
+				</form>
+			</div>
+			<div class="back-to-top">
+				<ion-icon name="arrow-dropup-circle"></ion-icon>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="row">
+			<p>Copyright &copy; 2018 by Traveler. All right reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>
