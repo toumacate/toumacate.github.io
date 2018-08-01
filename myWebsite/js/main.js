@@ -50,23 +50,22 @@ $('document').ready(function(){
 	//-- slideshow --//
 	var slideUl = $('.slideshow').find('ul');
 	var	slideLi = slideUl.find('li');
-	var	slideLiFirst = slideUl.find('li:first');
-
 
 	slideLi.css({display:'block', opacity:'0', zIndex:'99'});
-	slideUl.find('li:first').css({opacity:'1', zIndex:'100'});
-
-	setInterval(function(){
-		slideUl.find('li:first').animate({opacity:'0'},1000).
-		next('li').css({zIndex:'100'}).animate({opacity:'1'},1000).
-		end().appendTo(slideUl).css({zIndex:'99'});
-	},3000);
 
 	$(window).on('resize',function(){
 		areaHeight();
 	});
 
 	areaHeight();
+
+	slideUl.find('li:first').css({opacity:'1', zIndex:'100'});
+	
+	setInterval(function(){
+		slideUl.find('li:first').animate({opacity:'0'},1000).
+		next('li').css({zIndex:'100'}).animate({opacity:'1'},1000).
+		end().appendTo(slideUl).css({zIndex:'99'});
+	},3000);
 
 	//-- form --//
 	$('#submit').on('click',function(){
@@ -129,8 +128,8 @@ $('document').ready(function(){
 	function areaHeight() {
 		var imgHeight = slideLi.find('img').height();
 
+		$('.slideshow').css({height:imgHeight});
+		slideUl.css({height:imgHeight});
 		slideLi.css({height:imgHeight});
-
-		$('.section-places').css({paddingBottom:(imgHeight+65)});
 	}
 });
