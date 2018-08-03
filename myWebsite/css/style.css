@@ -207,8 +207,7 @@ h3 {
 
 .slideshow {
 	width: 66%;
-	/*height: 502px;*/
-	margin: 65px 17%;
+	margin: 65px 17% 0 17%;
 	position: relative;
 }
 
