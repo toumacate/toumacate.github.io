@@ -57,7 +57,7 @@ $('document').ready(function(){
 		areaHeight();
 	});
 
-	set areaHeight();
+	setTimeout('areaHeight()',100);
 
 	slideUl.find('li:first').css({opacity:'1', zIndex:'100'});
 	
