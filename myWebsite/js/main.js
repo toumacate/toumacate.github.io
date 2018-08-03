@@ -1,8 +1,9 @@
-var body = $('html, body');
+
 
 $('document').ready(function(){
 	
 	//-- scrollTop --//
+	var body = $('html, body');
 	var mainNavLi = $('.main-nav li');
 	var asideNavLi = $('.aside-nav li');
 	var asideNav = $('.aside-nav');
@@ -100,23 +101,24 @@ $('document').ready(function(){
 			asideNav.show();
 		}
 	});
+	
+	//-- function --//
+	function toSectionNews() {
+		body.animate({
+			scrollTop: $('.section-news').offset().top
+		},600);
+	} 
+
+	function toSectionPlaces() {
+		body.animate({
+			scrollTop: $('.section-places').offset().top
+		},1000);
+	}
+
+	function toSectionForm() {
+		body.animate({
+			scrollTop: $('.section-form').offset().top
+		},1000);
+	}
 });
 
-//-- function --//
-function toSectionNews() {
-	body.animate({
-		scrollTop: $('.section-news').offset().top
-	},600);
-} 
-
-function toSectionPlaces() {
-	body.animate({
-		scrollTop: $('.section-places').offset().top
-	},1000);
-}
-
-function toSectionForm() {
-	body.animate({
-		scrollTop: $('.section-form').offset().top
-	},1000);
-}
