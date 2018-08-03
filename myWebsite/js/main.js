@@ -57,7 +57,7 @@ $('document').ready(function(){
 		areaHeight();
 	});
 
-	areaHeight();
+	set areaHeight();
 
 	slideUl.find('li:first').css({opacity:'1', zIndex:'100'});
 	
@@ -105,8 +105,9 @@ $('document').ready(function(){
 			asideNav.show();
 		}
 	});
+});
 
-	//-- function --//
+//-- function --//
 	function toSectionNews() {
 		body.animate({
 			scrollTop: $('.section-news').offset().top
@@ -132,4 +133,3 @@ $('document').ready(function(){
 		slideUl.css({height:imgHeight});
 		slideLi.css({height:imgHeight});
 	}
-});
