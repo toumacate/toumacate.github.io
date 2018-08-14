@@ -1,0 +1,128 @@
+@media screen and (max-width: 1000px) {
+	.section-ad {
+		height: 1000px;
+	}
+
+	.section-ad .picture-ad {
+		margin: 0 auto;
+		float: none;
+	}
+
+	.text-ad {
+		width: 90%;
+		margin: 0 auto;
+		float: none;
+	}
+
+	.text-ad h2 {
+		margin-top: 40px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.nav {
+		display: none;
+	}
+
+	.btn-nav {
+		display: block;
+	}
+
+	.section-slideshow {
+		width: 100%;
+		height: 70vw;
+	}
+	
+	.section-food {
+		height: 1000px;
+	}
+
+	.food {
+		width: 95%;
+		margin: 0 auto;
+		float: none;
+	}
+
+	.slogan {
+		width: 60%;
+		margin: 0 auto;
+		float: none;
+		margin-top: 40px;
+	}
+	
+	.section-chef {
+		height: 750px;
+	}
+
+	.section-chef div:first-child {
+		margin: 0 auto;
+		float: none;
+	}
+
+	.section-chef div:last-child {
+		width: 100%;
+		margin: 0 auto;
+		float: none;
+		text-align: justify;
+	}
+	
+	.section-filter {
+		height: 1200px;
+	}
+
+	.img-list ul li {
+	width: 36vw;
+	height: 24vw;
+	float: left;
+	list-style: none;
+	margin-right: 9vw;
+	margin-bottom: 8px;
+	}
+
+	.img-list ul li img {
+		cursor: auto;
+	}
+}
+
+@media screen and (max-width: 599px) {
+	.section-ad {
+		height: 500px;
+		padding: 0;
+	}
+
+	.picture-ad {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.food {
+		width: 100%;
+	}
+
+	.section-food {
+		padding-top: 0;
+	}
+
+	.aside-nav {
+		width: 100%;
+		background: rgba(230,230,230,0.8);
+	}
+}
+
+@media screen and (max-width: 392px) {
+	.section-food {
+		height: 1200px;
+	}
+
+	.section-chef div:first-child {
+		width: 260px;
+		height: 260px;
+		overflow: hidden;
+		border-radius: 50%;
+	}
+
+	.section-chef div:last-child p {
+		padding: 80px 30px;
+	}
+}
