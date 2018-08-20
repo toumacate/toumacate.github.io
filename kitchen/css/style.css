@@ -14,7 +14,6 @@ body {
 section {
 	background-color: #fff;
 	width: 100%;
-	/*height: 700px;*/
 }
 
 .clearfix:after,
@@ -173,8 +172,6 @@ header {
 .menu li {
 	text-align: center;
 	font-weight: 700;
-	/*margin: 10px auto;*/
-	/*padding-left: 5%;*/
 	list-style: none;
 }
 
@@ -199,9 +196,6 @@ header {
 	display: inline-block;
 	width: 100px;
 	height: 70px;
-	/*top: -100px;
-	left: 5px;
-	position: absolute;*/
 	background-color: #fff;
 	border: 2px solid #A1A1A1;
 	vertical-align: middle;
@@ -376,7 +370,6 @@ header {
 	width: 80%;
 	height: 50px;
 	margin: 40px auto;
-	/*padding: 8px 40px;*/
 	border: 3px solid #ADCD22;
 	border-radius: 20px;
 	position: relative;
@@ -395,7 +388,6 @@ header {
 }
 
 .ad-icon {
-	/*width: calc(100vw - 620px);*/
 	height: 300px;
 	font-size: 1200%;
 	text-align: center;
@@ -404,10 +396,8 @@ header {
 
 /*-- FILTER --*/
 .section-filter {
-	/*display: table;*/
 	width: 100%;
 	height: 600px;
-	/*margin-bottom: 50px;*/
 }
 
 .btn-filter {
@@ -481,10 +471,6 @@ header {
 	height: 30px;
 	top: -15px;
 	right: -15px;
-	/*top: 0%;*/
-	/*top: calc(50% - 200);
-	left: 50%;*/
-	/*transform: translate(-50%, -50%);*/
 	position: fixed;
 	font-size: 120%;
 	text-align: center;
@@ -495,19 +481,6 @@ header {
 	border-radius: 50%;
 	cursor: pointer;
 }
-
-/*.pop-up {
-	display: none;
-	width: 600px;
-	height: 400px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	position: fixed;
-	z-index: 300;
-	align-items: center;
-	justify-content: center;
-}*/
 
 .pop-up img {
 	width: 100%;
