@@ -64,6 +64,20 @@ body {
 	border-radius: 10px;
 }
 
+/*-- footer --*/
+
+#main-footer {
+  background: #000;
+  color: #fff;
+}
+
+/*-- explore --*/
+
+#person .row {
+	border-radius: 10px;
+}
+
+
 /*-- lightbox --*/
 
 .embed-container { 
@@ -84,9 +98,24 @@ body {
 	height: 100%; 
 }
 
-/*-- footer --*/
+/*-- RWD --*/
 
-#main-footer {
-  background: #000;
-  color: #fff;
+@media screen and (max-width: 992px) {
+	.carousel-item {
+  		height: 80vh;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.carousel-image-1 {
+	  background-position: center;
+	}
+	
+	.carousel-image-2 {
+	  background-position: center;
+	}
+
+	.carousel-image-3 {
+	  background-position: center;
+	}
 }
