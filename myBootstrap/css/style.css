@@ -11,11 +11,6 @@ body {
   padding-right: 1rem !important;
 }
 
-.navbar .nav-item.active {
-	border-bottom-width: 70%;
-  border-bottom: orange 3px solid;
-}
-
 /*-- carousel --*/
 
 .carousel-item {
