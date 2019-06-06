@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+		$('document').ready(function(){
+			$(window).scroll(function(){
+				
+				//change sticky style
+				if ($(window).scrollTop()){
+					$('nav').addClass('black');
+					$('.dropdown').css({'top': '80px', 'background-color': 'rgba(0,0,0,.8)'});
+				} else{
+					$('nav').removeClass('black');
+					$('.dropdown').css({'top': '100px', 'backgroundColor': 'rgba(236, 240, 241,1.0)'});
+				}
+
+				//scroll to top
+				if ($(this).scrollTop() > 200){
+					$('.scrollToTop').fadeIn();
+				} else {
+					$('.scrollToTop').fadeOut();
+				}
+			});
+
+			//smooth scroll
+			$('.scrollToTop').click(function(){
+				$('html,body').animate({scrollTop: 0}, 1000);
+			})
+		});
+	</script>
+</head>
+<body>
+	<nav>
+		<div class="logo">
+			<img src="img/logo.png">
+		</div>
+		<ul class="menu">
+			<li><a href="#" class="active">Home</a></li>
+			<li><a href="#">About</a>
+				<ul class="dropdown">
+					<li><a href="#">list1</a></li>
+					<li><a href="#">list2</a></li>
+					<li><a href="#">list3</a></li>
+					<li><a href="#">list4</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Service</a></li>
+			<li><a href="#">portfolio</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+	<section class="sec1"></section>
+	<section class="content">
+		<h1>Lorem ipsum dolor sit amet, consectetur adipisicing</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo eius accusamus, tempore quaerat aspernatur ex vitae vel facilis magnam! Est facilis explicabo, nobis et. Aut cumque consectetur deserunt, provident quam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo eius accusamus, tempore quaerat aspernatur ex vitae vel facilis magnam! Est facilis explicabo, nobis et. Aut cumque consectetur deserunt, provident quam!</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo eius accusamus, tempore quaerat aspernatur ex vitae vel facilis magnam! Est facilis explicabo, nobis et. Aut cumque consectetur deserunt, provident quam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo eius accusamus, tempore quaerat aspernatur ex vitae vel facilis magnam! Est facilis explicabo, nobis et. Aut cumque consectetur deserunt, provident quam!</p>
+	</section>
+	<section class="sec2"></section>
+	<section class="content">
+		<h1>Lorem ipsum dolor sit amet, consectetur adipisicing</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo eius accusamus, tempore quaerat aspernatur ex vitae vel facilis magnam! Est facilis explicabo, nobis et. Aut cumque consectetur deserunt, provident quam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo eius accusamus, tempore quaerat aspernatur ex vitae vel facilis magnam! Est facilis explicabo, nobis et. Aut cumque consectetur deserunt, provident quam!</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo eius accusamus, tempore quaerat aspernatur ex vitae vel facilis magnam! Est facilis explicabo, nobis et. Aut cumque consectetur deserunt, provident quam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo eius accusamus, tempore quaerat aspernatur ex vitae vel facilis magnam! Est facilis explicabo, nobis et. Aut cumque consectetur deserunt, provident quam!</p>
+	</section>
+	<a href="#" class="scrollToTop"><i class="fas fa-arrow-up"></i></a>
+
+	<section class="link">
+		<div><a href="../full-page-menu/index.html">滿版選單</a></div>
+		<div><a href="../modal/index.html">彈出框</a></div>
+		<div><a href="../open/index.html">翻頁效果</a></div>
+		<div><a href="../sidebar/index.html">側邊選單</a></div>
+		<div><a href="../responsive-navbar/index.html">響應式選單</a></div>
+		<div><a href="#">固定導航欄</a></div>
+	</section>
+</body>
+</html>
