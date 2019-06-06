@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+		$('document').ready(function(){
+			$('.open').click(function(){
+				$('.content').addClass('active');
+			});
+
+			$('.close').click(function(){
+				$('.content').removeClass('active');
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="box">
+		<a class="open">Click Here</a>
+		<div class="content">
+			<h1>Lorem ipsum dolor sit amet, consectetur adipisicing</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nostrum, doloribus deleniti non amet. Blanditiis iure, nobis cum corporis, optio eos rerum itaque voluptatum necessitatibus, error a illum nostrum temporibus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nostrum, doloribus deleniti non amet. Blanditiis iure, nobis cum corporis, optio eos rerum itaque voluptatum necessitatibus, error a illum nostrum temporibus.</p>
+			<a class="close">Close</a>
+		</div>
+	</div>
+	<section class="link">
+		<div><a href="../full-page-menu/index.html">滿版選單</a></div>
+		<div><a href="#">彈出框</a></div>
+		<div><a href="../open/index.html">翻頁效果</a></div>
+		<div><a href="../sidebar/index.html">側邊選單</a></div>
+		<div><a href="../responsive-navbar/index.html">響應式選單</a></div>
+		<div><a href="../sticky-navbar/index.html">固定導航欄</a></div>
+	</section>
+</body>
+</html>
