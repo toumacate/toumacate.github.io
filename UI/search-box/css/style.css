@@ -1,0 +1,69 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.search input {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: calc(100% - 100px);
+	height: 60px;
+	font-size: 3em;
+	border: none;
+	outline: none;
+	padding: 0 10px;
+	color: #666;
+}
+
+.search {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80px;
+	height: 80px;
+	transform: translate(-50%,-50%);
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.5);
+	transition: .5s;
+	overflow: hidden;
+}
+
+.search.active {
+	width: 400px;
+}
+
+.icon {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 60px;
+	height: 60px;
+	border-radius: 5px;
+}
+
+.search.active .icon {
+	background-color: #3498db;
+}
+
+.icon .fas {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 60px;
+	font-size: 3em;
+}
+
+.link {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100vw;
+	height: 100vh;
+	background-color: #f1f1f1;
+}
+
+.link div {
+	margin-top: 500px;
+	margin-left: 10px;
+}
