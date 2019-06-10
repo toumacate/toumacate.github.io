@@ -1,0 +1,50 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.imgBox {
+	width: 720px;
+	height: 400px;
+	margin: 20px auto;
+}
+
+.imgBox img {
+	width: 100%;
+	height: 100%;
+	border: 5px solid #fff;
+	box-shadow: 0 5px 25px rgba(0,0,0,.5);
+}
+
+ul {
+	margin: 40px auto;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+ul li {
+	width: 120px;
+	list-style: none;
+	margin: 0 15px;
+}
+
+ul li a img {
+	width: 100%;
+	height: 100%;
+	border: 5px solid #fff;
+	box-shadow: 0 5px 25px rgba(0,0,0,.5);
+}
+
+.link {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100vw;
+	height: 20vh;
+	background-color: #f1f1f1;
+}
+
+.link div {
+	margin-left: 10px;
+}

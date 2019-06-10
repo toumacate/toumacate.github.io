@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href='css/style.css'>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+		$('document').ready(function(){
+			$('ul a').mouseover(function(e){
+				e.preventDefault();
+				$('.imgBox img').attr('src', $(this).data('text'));
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="imgBox"><img src="img/pic1.jpg"></div>
+	<ul>
+		<li><a href='#' data-text="img/pic1.jpg" target="imgBox"><img src="img/pic1.jpg"></a></li>
+		<li><a href='#' data-text="img/pic2.jpg" target="imgBox"><img src="img/pic2.jpg"></a></li>
+		<li><a href='#' data-text="img/pic3.jpg" target="imgBox"><img src="img/pic3.jpg"></a></li>
+		<li><a href='#' data-text="img/pic4.jpg" target="imgBox"><img src="img/pic4.jpg"></a></li>
+		<li><a href='#' data-text="img/pic5.jpg" target="imgBox"><img src="img/pic5.jpg"></a></li>
+	</ul>
+	<section class="link">
+		<div><a href="../full-page-menu/index.html">滿版選單</a></div>
+		<div><a href="../modal/index.html">彈出框</a></div>
+		<div><a href="../open/index.html">翻頁效果</a></div>       <!-- 記得修改 -->
+		<div><a href="../sidebar/index.html">側邊選單</a></div>
+		<div><a href="../responsive-navbar/index.html">響應式選單</a></div>
+		<div><a href="../sticky-navbar/index.html">固定導航欄</a></div>
+		<div><a href="#">照片秀</a></div>
+		<div><a href="../search-box/index.html">搜尋框</a></div>
+		<div><a href="../input-animation/index.html">輸入框動畫</a></div>
+		<div><a href="../moving-tooltip/index.html">提示</a></div>
+	</section>
+</body>
+</html>
