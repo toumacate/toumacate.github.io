@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+		$('document').ready(function(){
+			$('.box').mousemove(function(e){
+				var x = e.pageX;
+				var y = e.pageY;
+				$('.tooltip').css({
+					top: y+15 + "px",
+					left: x+10 + "px"
+				})
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="box">
+		<img src="img/img1.jpg">
+		<div class="tooltip">夕陽西下</div>
+	</div>
+	<section class="link">
+		<div><a href="../full-page-menu/index.html">滿版選單</a></div>
+		<div><a href="../modal/index.html">彈出框</a></div>
+		<div><a href="../open/index.html">翻頁效果</a></div>       <!-- 記得修改 -->
+		<div><a href="../sidebar/index.html">側邊選單</a></div>
+		<div><a href="../responsive-navbar/index.html">響應式選單</a></div>
+		<div><a href="../sticky-navbar/index.html">固定導航欄</a></div>
+		<div><a href="../image-show/index.html">照片秀</a></div>
+		<div><a href="../search-box/index.html">搜尋框</a></div>
+		<div><a href="../input-animation/index.html">輸入框動畫</a></div>
+		<div><a href="#">提示</a></div>
+	</section>
+</body>
+</html>
